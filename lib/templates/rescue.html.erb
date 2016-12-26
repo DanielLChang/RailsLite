@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1><%= e.class %>: <%= e.message %></h1>
+
+    <h3>Stack Trace:</h3>
+    <p>
+      <% e.backtrace.each do |trace| %>
+        <%= trace %><br>
+      <% end %>
+    </p>
+
+  </body>
+</html>
